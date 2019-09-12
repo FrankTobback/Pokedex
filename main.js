@@ -6,4 +6,7 @@ async function getPokemon() {
     console.log(json);
 };
 
-getPokemon();
+getPokemon().catch(error => {
+    console.log('error!');
+    console.error(error);
+});
